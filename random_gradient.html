@@ -1,0 +1,11 @@
+<body onclick="setGradient()" style="margin:0;height:100vh;"></body>
+
+<script>
+function randColor() {
+  return "#" + Math.floor(Math.random()*16777215).toString(16);
+}
+function setGradient() {
+  const c1 = randColor(), c2 = randColor();
+  document.body.style.background = `linear-gradient(${c1}, ${c2})`;
+}
+</script>
